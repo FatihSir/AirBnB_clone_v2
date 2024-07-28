@@ -9,13 +9,15 @@ app = Flask(__name__)
 
 
 @app.route('/', strict_slashes=False)
-def hello_hbnb():
-    return f"Hello HBNB!"
+def hello_world():
+    """Returns Hello HBNB in text format"""
+    return 'Hello HBNB!'
 
 
 @app.route('/hbnb', strict_slashes=False)
-def hbnb():
-    return f"HBNB!"
+def hello():
+    """Returns HBNB in text format"""
+    return 'HBNB!'
 
 
 if __name__ == '__main__':
